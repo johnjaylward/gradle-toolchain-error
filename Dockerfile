@@ -11,7 +11,7 @@ COPY . /app
 RUN chmod +x gradlew
 
 # Run the Gradle build
-RUN ./gradlew build
+RUN gradle build
 
 # Use a smaller base image for the final image
 # FROM openjdk:8-jre-alpine
