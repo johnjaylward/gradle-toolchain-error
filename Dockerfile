@@ -1,6 +1,6 @@
-FROM eclipse-temurin:11-jdk-alpine AS build
+#FROM eclipse-temurin:11-jdk-alpine AS build
 # Use the official Gradle image as the base image
-#FROM gradle:8.12-jdk8 AS build
+FROM gradle:8.12-jdk11-alpine AS build
 # Set the working directory inside the container
 WORKDIR /app
 
